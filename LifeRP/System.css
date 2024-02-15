@@ -1,0 +1,202 @@
+
+body {
+   font-family: 'Helvetica Neue LT Pro Bd', 'Arial', sans-serif;
+   text-align: center;
+   background-image: url('image/LIFEBACK.jpg'); /* 替换 'image/LIFEBACK.jpg' 为你的背景图像 URL */
+   color: white; /* 文本颜色，以适应背景图像 */
+   padding: 0; /* 移除内边距，以便内容不会太靠近边缘 */
+ }
+
+
+
+
+ 
+ .down-arrow {
+   position: absolute;
+   bottom: -20px; /* 调整向下箭头的垂直位置 */
+   left: 50%;
+   transform: translateX(-50%);
+   font-size: 24px; /* 调整箭头图标的大小 */
+   color: #333; /* 调整箭头图标的颜色 */
+ }
+ 
+
+
+header {
+   margin-top: 20px; /* 调整这个值以改变上外边距 */
+ }
+
+ h1{
+   color: #ffc107;
+   font-size: 36px; /* 调整标题字体大小 */
+   font-weight: bold; /* 调整标题字体粗细 */
+ }
+
+ h2{
+  color: #ffc107;
+  font-size: 36px; /* 调整标题字体大小 */
+  font-weight: bold; /* 调整标题字体粗细 */
+
+}
+
+ .d-flex {
+   align-items: baseline;
+ }
+
+ .btn i {
+   margin-right: 8px; /* Adjust the value as needed for your desired spacing */
+ }
+
+
+ body {
+   color: white; /* 将文字颜色设置为白色 */
+   font-family: 'Arial', sans-serif; /* 添加字体样式，如果需要的话 */
+ }
+
+ .nav-link,
+ .btn {
+   position: relative;
+   color: white !important; /* 将导航链接和按钮的文字颜色设置为白色 */
+   text-decoration: none;
+   display: flex;
+   align-items: center;
+ }
+
+ .btn {
+   font-weight: bold;
+ }
+
+
+
+ .nav-link::after {
+   content: '';
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   width: 0;
+   height: 2px;
+   background-color: #ffc107; /* 初始动画条的颜色，您可以根据需要更改 */
+   transition: width 0.3s ease-in-out;
+ }
+
+ .nav-link:hover::after {
+   width: 100%;
+ }
+
+ .text-start {
+   margin-right: 25px; /* 调整这个值以改变左外边距 */
+ }
+
+ .nav-link:hover {
+   color: #ffc107 !important; /* 设置鼠标悬停时导航链接的文字颜色 */
+ }
+
+ .btn:hover {
+   color: #ffc107 !important;
+ }
+
+ .btn::before {
+   content: '';
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   width: 0;
+   height: 2px;
+   background-color: #ffc107; /* 初始动画条的颜色 */
+   transition: width 0.3s ease-in-out; /* 添加宽度渐变动画 */
+ }
+
+ .btn:hover::before {
+   width: 100%;
+ }
+
+.nav-link i {
+ margin-right: 8px; /* Adjust the value as needed for your desired spacing */
+}
+
+.nav-link {
+ font-weight: bold;
+}
+
+.middle {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   animation: floatAndFade 2s infinite alternate;
+   opacity: 0.8; /* 初始不透明度 */
+   white-space: nowrap; /* 防止文本换行 */
+ }
+ 
+ @keyframes floatAndFade {
+   0% {
+     transform: translate(-50%, -50%) translateY(0);
+     opacity: 0.8;
+   }
+   100% {
+     transform: translate(-50%, -50%) translateY(-20px);
+     opacity: 0.5;
+   }
+ }
+
+ .middle {
+   font-family: 'Helvetica Neue LT Pro Bd', 'Arial', sans-serif;
+   text-align: center;
+ }
+
+ 
+ .down-arrow {
+   position: absolute;
+   bottom: -20px; /* 调整向下箭头的垂直位置 */
+   left: 50%;
+   transform: translateX(-50%);
+   font-size: 24px; /* 调整箭头图标的大小 */
+   color: #333; /* 调整箭头图标的颜色 */
+ }
+ 
+ @keyframes gradientAnimation {
+  0% {
+    border-color: orange;
+  }
+  50% {
+    border-color: red;
+  }
+  100% {
+    border-color: green;
+  }
+}
+
+.animated-border {
+  animation: gradientAnimation 8s infinite; /* 设置动画属性，5秒钟完成一次动画，无限循环 */
+}
+ 
+
+.card-text {
+  font-weight: bold; /* 设置文字为粗体 */
+  font-family: 'Your-GTAV-Font', sans-serif; /* 替换'Your-GTAV-Font'为您选择的GTAV风格字体 */
+}
+
+  @font-face {
+    font-family: 'Your-GTAV-Font';
+    src: url('path/to/your/font.woff2') format('woff2'); /* 替换为字体文件的实际路径和格式 */
+    /* 可以添加其他字体格式的源，如woff或ttf，以提供更好的兼容性 */
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  .card-text {
+    font-weight: bold;
+    font-family: 'Your-GTAV-Font', sans-serif;
+  }
+  .card {
+    background-size: cover; /* 调整背景图片的尺寸，保持纵横比并覆盖整个区域 */
+    border: 2px solid red; /* 添加红色边框 */
+    transition: border-color 0.8s ease; /* 添加过渡效果 */
+  }
+
+
+  .card:hover {
+    border-color:orange; /* 鼠标悬停时的颜色，你可以根据需要修改 */
+  }
+
+
